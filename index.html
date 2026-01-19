@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" type="x-icon" href="profile.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Pre-Loader Start-->
+     <div class="h-screen bg-[#C5EAE8] fixed w-full z-50 bg-[url(infinite-gif-preloader.gif)] bg-no-repeat bg-center preloader ease-out duration-150">
+
+     </div>
+    <!-- Navbar Start -->
+    <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 drop-shadow-xl">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <span class="self-center text-3xl font-semibold whitespace-nowrap dark:text-white tracking-wider hover:text-rose-500">TOMA</span>
+        </a>
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+            <div class="flex space-x-4 items-center text-xl dark:text-gray-200">
+                <a href="https://www.facebook.com/akib.anjum.5" target="_blank"><i class="fa-brands fa-facebook hover:text-sky-700 hover:scale-125 ease-in duration-150"></i></a>
+                <a href="https://x.com/AnjumAkib" target="_blank"><i class="fa-brands fa-twitter hover:text-sky-600 hover:scale-125 ease-in duration-150"></i></a>
+                <a href="https://www.instagram.com/itsakib16/" target="_blank"><i class="fa-brands fa-instagram hover:text-rose-600 hover:scale-125 ease-in duration-150"></i></a>
+            </div>
+            <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+          </button>
+        </div>
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+          <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+              <a href="#home" class="block py-2 px-3 text-gray-900 bg-blue-700 rounded md:bg-transparent md:hover:text-rose-500 md:p-0 md:dark:text-white" aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="#about" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-rose-500 md:p-0 md:dark:hover:text-rose-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+            </li>
+            <li>
+              <a href="#services" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-rose-500 md:p-0 md:dark:hover:text-rose-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+            </li>
+            <li>
+                <a href="#resume" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-rose-500 md:p-0 md:dark:hover:text-rose-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Resume</a>
+            </li>
+            <li>
+                <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-rose-500 md:p-0 md:dark:hover:text-rose-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">FAQ</a>
+            </li>
+            <li>
+                <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-rose-500 md:p-0 md:dark:hover:text-rose-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Client</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-rose-500 md:p-0 md:dark:hover:text-rose-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Page-1 Start -->
+    <div class="h-full bg-rose-600 bg-no-repeat bg-cover pt-16 pb-16 px-6 sm:px-8 md:px-12 lg:px-28 lg:flex place-content-between" id="home">
+        <!-- Large Devices -->
+        <div class="sm:hidden md:hidden lg:contents hidden">
+            <div>
+                <div class="mt-36">
+                    <h2  class="text-gray-50 lg:text-5xl font-light capitalize">Hi, i'm  </h2>
+                    <h1 class="text-gray-100 lg:text-6xl font-bold capitalize mt-6">TOMA</h1>
+                    <p class="text-gray-50 lg:text-xl mt-4">A Passionate Programmeer and Visual Storyteller.</p>
+                </div>
+                <div class="flex items-center mt-10">
+                    <button class="bg-slate-900 text-gray-50 px-10 py-3 shadow-md">View My Works</button>
+                    <button class="pl-10 underline hover:no-underline">Contact Me<i class="fa-solid fa-circle-arrow-down ml-2"></i></button>
+                </div>
+            </div>
+            <div class="mt-16">
+                <img src="profile.jpg" alt="Akib" class="profile rounded-full bg-white p-4 shadow-lg shadow-gray-400">
+            </div>
+        </div>
+        <!-- Medium Devices -->
+        <div class="sm:hidden md:contents lg:hidden hidden">
+            <div class="mt-16 flex justify-center">
+                <img src="profile.jpg" alt="Akib" class="w-[35rem] rounded-full bg-white p-4 shadow-lg shadow-gray-400">
+            </div>
+            <div>
+                <div class="mt-12">
+                    <h2  class="text-gray-50 md:text-5xl md:text-center font-light capitalize">Hi, i'm a </h2>
+                    <h1 class="text-gray-100 md:text-6xl md:text-center font-bold capitalize mt-6">Student</h1>
+                    <p class="text-gray-50 md:text-xl md:text-center mt-4">lives in Dhaka, Bangladesh.</p>
+                </div>
+                <div class="flex items-center mt-10 md:justify-center">
+                    <button class="bg-slate-900 text-gray-50 px-10 py-3 shadow-md">View My Works</button>
+                    <button class="pl-10 underline hover:no-underline">Contact Me<i class="fa-solid fa-circle-arrow-down ml-2"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- Small Devices -->
+        <div class="sm:contents md:hidden lg:hidden hidden">
+            <div class="mt-16 flex justify-center">
+                <img src="profile.jpg" alt="Akib" class="w-[35rem] rounded-full bg-white p-4 shadow-lg shadow-gray-400">
+            </div>
+            <div>
+                <div class="mt-12">
+                    <h2  class="text-gray-50 sm:text-4xl sm:text-center font-light capitalize">Hi, i'm a </h2>
+                    <h1 class="text-gray-100 sm:text-5xl sm:text-center font-bold capitalize mt-6">Student</h1>
+                    <p class="text-gray-50 sm:text-lg sm:text-center mt-4">lives in Dhaka, Bangladesh.</p>
+                </div>
+                <div class="flex items-center mt-10 sm:justify-center">
+                    <button class="bg-slate-900 text-gray-50 px-10 py-3 shadow-md">View My Works</button>
+                    <button class="pl-10 underline hover:no-underline">Contact Me<i class="fa-solid fa-circle-arrow-down ml-2"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- Smaller Devices -->
+        <div class="sm:hidden md:hidden lg:hidden">
+            <div class="mt-16 flex justify-center">
+                <img src="profile.jpg" alt="Akib" class="w-[35rem] rounded-full bg-white p-4 shadow-lg shadow-gray-400">
+            </div>
+            <div>
+                <div class="mt-16">
+                    <h2  class="text-gray-50 text-2xl text-center font-light capitalize">Hi, i'm a </h2>
+                    <h1 class="text-gray-100 text-3xl text-center font-bold capitalize mt-6">Student</h1>
+                    <p class="text-gray-50 text-base text-center mt-4">lives in Dhaka, Bangladesh.</p>
+                </div>
+                <div class="flex items-center mt-10 justify-center">
+                    <button class="bg-slate-900 text-gray-50 px-5 py-2.5 shadow-md">View My Works</button>
+                    <button class="pl-10 underline hover:no-underline">Contact Me<i class="fa-solid fa-circle-arrow-down ml-2"></i></button>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <!-- Page-1 End -->
+
+
+    <!-- Page-2 Start -->
+    <div class="h-full pb-16 px-6 sm:px-8 md:px-12 lg:px-28 pt-1.5" id="about">
+        <div class="flex items-center justify-center mt-20" data-aos="fade-up">
+            <p class="text-center bg-rose-500 px-3 py-.5">About Me</p>
+        </div>
+            <h1 class="text-center text-4xl mt-4 font-semibold" data-aos="fade-up">Know Me More</h1>
+        <div class="lg:flex place-content-between mt-6">
+            <div data-aos="fade-up">
+                <h1 class="text-center sm:text-center text-xl sm:text-2xl lg:text-left md:text-center md:text-2xl lg:text-3xl pb-3 mt-6 text-slate-900">Hi, I'm <b class="text-black">Nusrat Jahan Toma.</b></h1>
+                <p class="max-w-3xl text-base text-center md:text-xl sm:text-lg sm:text-center md:text-center lg:text-left leading-9 font-light text-slate-900">I’m Nusrat Jahan Toma, a CSE student at AIUB with a passion for programming, photography, and videography. I enjoy blending creativity with technology to create meaningful visuals and smart technical solutions..</p>
+            </div>
+            <div>
+                <div class="mt-8 sm:mt-10 lg:mt-10 flex justify-center">
+                    <div class="w-32 h-32 rounded-full bg-rose-500 sm:mt-12 lg:mt-2 mb-4" data-aos="fade-up">
+                        <h1 class="text-center text-9xl text-slate-600">2</h1>
+                    </div>
+                </div>
+                <p class="text-center sm:text-center md:text-center lg:text-right text-xl" data-aos="fade-up">Months of <b>Experience</b></p>
+            </div>
+        </div>
+        <div class="hidden sm:hidden md:hidden lg:flex items-center place-content-between mt-14">
+            <div data-aos="fade-up">
+                <p class="text-slate-900 mb-2">Name:</p>
+                <P class="font-bold">Nusrat Jahan Toma</P>
+            </div>
+            <div data-aos="fade-up">
+                <p class="text-slate-900 mb-2">E-mail:</p>
+                <p class="font-bold">nusrat.toma500@gmail.com</p>
+            </div>
+            <div data-aos="fade-up">
+                <p class="text-slate-900 mb-2">Date of Birth:</p>
+                <p class="font-bold">17 July, 2004</p>
+            </div>
+            <div data-aos="fade-up">
+                <p class="text-slate-900 mb-2">From:</p>
+                <p class="font-bold">Dhaka, Bangladesh</p>
+            </div>
+        </div>
+        <div class="flex place-content-between sm:flex md:flex md:place-content-between sm:place-content-between lg:hidden mt-12 md:mt-14 sm:mt-12 max-sm:text-xs">
+            <div class="lg:hidden">
+                <div class="mb-3 sm:mb-3 md:mb-4">
+                    <p class="text-slate-900 mb-2">Name:</p>
+                    <P class="font-bold">Nusrat Jahan Toma</P>
+                </div>
+                <div>
+                    <p class="text-slate-900 mb-2">E-mail:</p>
+                    <p class="font-bold">nusrat.toma@gmail.com</p>
+                </div>
+            </div>
+            <div class="lg:hidden">
+                <div class="mb-3 sm:mb-3 md:mb-4">
+                    <p class="text-slate-900 mb-2">Date of Birth:</p>
+                    <p class="font-bold">17 July, 2005</p>
+                </div>
+                <div>
+                    <p class="text-slate-900 mb-2">From:</p>
+                    <p class="font-bold">Dhaka, Bangladesh</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page-2 End -->
+
+
+    <!-- Page-3 Start -->
+    <div class="h-full bg-slate-100 px-6 sm:px-8 md:px-12 lg:px-28 pt-1 pb-20 md:pb-24 sm:pb-20 lg:pb-28" id="services">
+
+
+        <!-- Heading Part Start-->
+        <div class="flex items-center justify-center mt-20"><p class="text-center bg-rose-500 px-3 py-.5" data-aos="fade-up">What I Do?</p></div>
+        <h1 class="text-center text-4xl mt-4 font-semibold" data-aos="fade-up">How I can help your next project</h1>
+        <!-- Heading Part End -->
+
+        <!-- First 3 Services Start -->
+        <div class="hidden sm:hidden md:hidden lg:flex place-content-between mt-16">
+            <div data-aos="fade-up">
+                <i class="fa-solid fa-palette text-5xl ml-36 mb-4 text-rose-500"></i>
+                <h1 class="text-2xl font-medium text-center mb-2">Graphic Design</h1>
+                <p class="text-base text-center max-w-80 font-normal text-slate-900">I have experience in graphic design using Canva, creating visually appealing designs and layouts for various projects.</p>
+            </div>
+            <div data-aos="fade-up">
+                <i class="fa-solid fa-desktop text-5xl mb-4 text-rose-500 ml-32"></i>
+                <h1 class="text-2xl font-medium text-center mb-2">Web Design</h1>
+                <p class="text-base text-center max-w-80 font-normal text-slate-900">I am a front-end developer with experience in HTML, CSS, and Tailwind CSS. Additionally, I have a background in graphic design using Canva, which complements my web design skills.</p>
+            </div>
+            <div data-aos="fade-up">
+                <i class="fa-solid fa-code text-5xl mb-4 text-rose-500 ml-32"></i>
+                <h1 class="text-2xl font-medium text-center mb-2">Web Development</h1>
+                <p class="text-base text-center max-w-80 font-normal text-slate-900">I am a budding front-end developer with experience in HTML, CSS, and Tailwind CSS, complemented by a background in graphic design using Canva.</p>
+            </div>
+        </div>
+        <!-- First 3 Services End -->
+
+        <!-- Responsive -->
+        <div class="lg:hidden flex sm:flex md:flex place-content-between mt-16">
+            <div>
+                <div class="max-sm:flex max-sm:justify-center">
+                    <i class="fa-solid fa-palette text-4xl sm:ml-28 md:ml-32 mb-4 text-rose-500"></i>
+                </div>
+                <h1 class="text-lg sm:text-xl font-medium text-center mb-2">Graphic Design</h1>
+                <p class="md:text-base text-xs max-w-60 sm:text-sm text-center sm:max-w-64 md:max-w-80 font-normal text-slate-900">I have experience in graphic design using Canva, creating visually appealing designs and layouts for various projects.</p>
+            </div>
+            <div>
+                <div class="max-sm:flex max-sm:justify-center"><i class="fa-solid fa-desktop text-4xl mb-4 text-rose-500 sm:ml-28 md:ml-32"></i></div>
+                <h1 class="text-lg sm:text-xl font-medium text-center mb-2">Web Design</h1>
+                <p class="md:text-base text-xs max-w-60 sm:text-sm text-center sm:max-w-64 md:max-w-80 font-normal text-slate-900">I am a front-end developer with experience in HTML, CSS, and Tailwind CSS. Additionally, I have a background in graphic design using Canva, which complements my web design skills.</p>
+            </div>
+        </div>
+        <div class="lg:hidden flex sm:flex md:flex place-content-between mt-10 sm:mt-10 md:mt-16">
+            <div>
+                <div class="max-sm:flex max-sm:justify-center"><i class="fa-solid fa-code text-4xl mb-4 text-rose-500 sm:ml-32"></i></div>
+                <h1 class="text-lg sm:text-xl font-medium text-center mb-2">Web Development</h1>
+                <p class="md:text-base text-xs sm:text-sm text-center sm:max-w-72 md:max-w-80 font-normal text-slate-900">I am a budding front-end developer with experience in HTML, CSS, and Tailwind CSS, complemented by a background in graphic design using Canva.</p>
+            </div>
+            <div>
+                <div class="max-sm:flex max-sm:justify-center"><i class="fa-solid fa-paintbrush text-4xl text-rose-500 sm:ml-32 mb-4"></i></div>
+                <h1 class="text-lg sm:text-xl font-medium text-center mb-2">Vedio Editing</h1>
+                <p class="md:text-base text-xs sm:text-sm text-center sm:max-w-72 md:max-w-80 font-normal text-slate-900">I create clean, engaging video edits that tell a story and capture emotion. My focus is on smooth transitions, balanced visuals, and edits that enhance the overall impact of the content..</p>
+            </div>
+        </div>
+        <div class="lg:hidden flex mt-10 sm:flex md:flex place-content-between sm:mt-10 md:mt-16">
+            <div>
+                <div class="max-sm:flex max-sm:justify-center"><i class="fa-solid fa-square-poll-vertical text-4xl text-rose-500 sm:ml-32 mb-4"></i></div>
+                <h1 class="sm:text-xl font-medium text-center mb-2">Business Analysis</h1>
+                <p class="md:text-base text-xs sm:text-sm text-center sm:max-w-72 md:max-w-80 font-normal text-slate-900">I bring expertise in Business Analysis, specializing in requirement gathering, process analysis, and stakeholder collaboration to drive effective solutions.</p>
+            </div>
+            <div>
+                <div class="max-sm:flex max-sm:justify-center"><i class="fa-solid fa-bullhorn text-4xl text-rose-500 sm:ml-32 mb-4"></i></div>
+                <h1 class="text-lg sm:text-xl font-medium text-center mb-2">Digital Marketing</h1>
+                <p class="text-xs md:text-base sm:text-sm text-center sm:max-w-72 md:max-w-80 font-normal text-slate-900">I have some experience in Digital Marketing, including basic knowledge of SEO, social media management, and content creation.</p>
+            </div>
+        </div>
+        <!-- Responsive End -->
+
+        <!-- Second 3 Services Start -->
+        <div class="hidden md:hidden sm:hidden lg:flex place-content-between mt-24">
+            <div data-aos="fade-up">
+                <i class="fa-solid fa-paintbrush text-5xl text-rose-500 ml-32 mb-4"></i>
+                <h1 class="text-2xl font-medium text-center mb-2">Vedio Editing</h1>
+                <p class="text-base text-center max-w-80 font-normal text-slate-900">I create clean, engaging video edits that tell a story and capture emotion. My focus is on smooth transitions, balanced visuals, and edits that enhance the overall impact of the content..</p>
+            </div>
+            <div data-aos="fade-up">
+                <i class="fa-solid fa-square-poll-vertical text-5xl text-rose-500 ml-32 mb-4"></i>
+                <h1 class="text-2xl font-medium text-center mb-2">Business Analysis</h1>
+                <p class="text-base text-center max-w-80 font-normal text-slate-900">I bring expertise in Business Analysis, specializing in requirement gathering, process analysis, and stakeholder collaboration to drive effective solutions.</p>
+            </div>
+            <div data-aos="fade-up">
+                <i class="fa-solid fa-bullhorn text-5xl text-rose-500 ml-32 mb-4"></i>
+                <h1 class="text-2xl font-medium text-center mb-2">Digital Marketing</h1>
+                <p class="text-base text-center max-w-80 font-normal text-slate-900">I have some experience in Digital Marketing, including basic knowledge of SEO, social media management, and content creation.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Second 3 Services End -->
+    <!-- Page-3 End -->
+
+    <!-- Page-4 Start -->
+    <div class="h-full px-6 sm:px-8 md:px-12 lg:px-28 pb-20" id="resume">
+        
+        <!-- Heading Part Start-->
+        <div class="flex items-center justify-center mt-20"><p class="text-center bg-rose-500 px-3 py-.5" data-aos="fade-up">Resume</p></div>
+        <h1 class="text-center text-4xl mt-4 font-semibold" data-aos="fade-up">A summary of My Resume</h1>
+        <!-- Heading Part End -->
+
+        <!-- Div Start -->
+        <div class="lg:flex mt-24">
+
+            <!-- Div-Left Start-->
+             <div class="lg:w-1/2" data-aos="fade-up">
+                <h1 class="text-3xl font-semibold mb-10">My Education</h1>
+                    <div class="border-l-2 border-rose-600">                       
+                        <div class="ml-4 pb-6 border-b-2 border-slate-200 mb-4">
+                            <h1 class="text-xl font-medium mb-4">Master in Computer Engineering</h1>
+                            <p class="mb-4 text-slate-600">Harvard University / 2028 - 2030</p>
+                            <p class="text-slate-600">---------</p>
+                        </div>
+                        <div class="ml-4 pb-6 border-b-2 border-slate-200 mb-4">
+                            <h1 class="text-xl font-medium mb-4">Bachelor in Computer Engineering</h1>
+                            <p class="mb-4 text-slate-600">American International University / 2024-2028</p>
+                            <p class="text-slate-600">------------</p>
+                        </div>
+                        <div class="ml-4">
+                            <h1 class="text-xl font-medium mb-4">Computer Science</h1>
+                            <p class="mb-4 text-slate-600">American International University / 2024-2028</p>
+                            <p class="text-slate-600">-------</p>
+                        </div>
+                    </div>                   
+             </div>
+            <!-- Div-Left End -->
+
+            <!--Div-Right Start  -->
+            <div class="lg:w-1/2 lg:ml-10 max-sm:mt-12 sm:mt-12 lg:mt-0" data-aos="fade-up">
+                <h1 class="text-3xl font-semibold mb-10">My Experience</h1>
+                <div class="border-l-2 border-rose-600">                       
+                    <div class="ml-4 pb-6 border-b-2 border-slate-200 mb-4">
+                        <h1 class="text-xl font-medium mb-4">Sr. Font End Developer</h1>
+                        <p class="mb-4 text-slate-600">Harvard University / 2028 - 2030</p>
+                        <p class="text-slate-600">-------</p>
+                    </div>
+                    <div class="ml-4 pb-6 border-b-2 border-slate-200 mb-4">
+                        <h1 class="text-xl font-medium mb-4">Jr. Font End Developer</h1>
+                        <p class="mb-4 text-slate-600">Dribbble Inc / 2024 - 2026</p>
+                        <p class="text-slate-600">---------</p>
+                    </div>
+                    <div class="ml-4">
+                        <h1 class="text-xl font-medium mb-4">HTML Developer</h1>
+                        <p class="mb-4 text-slate-600">Adobe Inc / 2022 - 2024</p>
+                        <p class="text-slate-600">--------</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Div-Right End -->
+        </div>
+        <!-- Div End -->
+
+        <!-- Skills Chart Start -->
+        <h1 class="text-3xl font-semibold mt-16 mb-10">My Skills</h1>
+        <div class="lg:flex place-content-between" data-aos="fade-up">
+            <div class="lg:w-5/12">
+                <div class="mb-4 flex place-content-between">
+                    <h1 class="font-medium">Web Design</h1>
+                    <p class="font-medium">50%</p>
+                </div>
+                <div class="h-2 bg-slate-300 rounded-xl">
+                    <div class="h-2 w-1/2 bg-rose-500 rounded-xl"></div>
+                </div>
+            </div>
+            <div class="lg:w-5/12 sm:mt-6 mt-6 lg:mt-0">
+                <div class="mb-4 flex place-content-between">
+                    <h1 class="font-medium">HTML</h1>
+                    <p class="font-medium">75%</p>
+                </div>
+                <div class="h-2 bg-slate-300 rounded-xl">
+                    <div class="h-2 w-3/4 bg-rose-500 rounded-xl"></div>
+                </div>
+            </div>
+        </div>
+        <div class="lg:flex place-content-between mt-8" data-aos="fade-up">
+            <div class="lg:w-5/12">
+                <div class="mb-4 flex place-content-between">
+                    <h1 class="font-medium">CSS</h1>
+                    <p class="font-medium">60%</p>
+                </div>
+                <div class="h-2 bg-slate-300 rounded-xl">
+                    <div class="h-2 w-3/5 bg-rose-500 rounded-xl"></div>
+                </div>
+            </div>
+            <div class="lg:w-5/12 sm:mt-6 mt-6 lg:mt-0">
+                <div class="mb-4 flex place-content-between">
+                    <h1 class="font-medium">Tailwind CSS</h1>
+                    <p class="font-medium">80%</p>
+                </div>
+                <div class="h-2 bg-slate-300 rounded-xl">
+                    <div class="h-2 w-4/5 bg-rose-500 rounded-xl"></div>
+                </div>
+            </div>
+        </div>
+        <div class="lg:flex place-content-between mt-8" data-aos="fade-up">
+            <div class="lg:w-5/12">
+                <div class="mb-4 flex place-content-between">
+                    <h1 class="font-medium">Web Development</h1>
+                    <p class="font-medium">65%</p>
+                </div>
+                <div class="h-2 bg-slate-300 rounded-xl">
+                    <div class="h-2 w-4/6 bg-rose-500 rounded-xl"></div>
+                </div>
+            </div>
+            <div class="lg:w-5/12 sm:mt-6 mt-6 lg:mt-0">
+                <div class="mb-4 flex place-content-between">
+                    <h1 class="font-medium">Digital Marketing</h1>
+                    <p class="font-medium">50%</p>
+                </div>
+                <div class="h-2 bg-slate-300 rounded-xl">
+                    <div class="h-2 w-1/2 bg-rose-500 rounded-xl"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Skills Chart End -->
+
+        <div class="w-full flex justify-center">
+            <button class="mt-16 border-gray-900 border-2 hover:bg-gray-900 hover:text-white duration-200 ease-in px-10 py-4"><a href="Blue Web Developer Resume.pdf" download="CV">Download CV</a></button>
+        </div>
+    </div>
+    <!-- Page-4 End -->
+
+    <!-- Parallax Start -->
+     <div style="background-image: url(Untitled\ design\ \(1\).jpg); background-size: cover;" class="max-sm:h-56 sm:h-72 md:80 lg:h-96 bg-fixed max-sm:py-20 sm:py-24 md:py-28 lg:py-32">
+        <h1 class="lg:text-4xl max-sm:text-xl sm:text-2xl md:text-3xl text-white font-bold text-center" data-aos="fade-up">Interested in working with me?</h1>
+        <div class="flex justify-center " data-aos="fade-up">
+            <button class="sm:mt-5 mt-5 md:mt-8 lg:mt-10 bg-rose-500 sm:px-6 px-6 md:px-8 lg:px-10 sm:font-light font-light md:font-normal lg:font-medium sm:py-1 py-1 md:py-2 lg:py-3 hover:ring-2 hover:ring-rose-500 hover:bg-inherit hover:text-white ease-in duration-150">Hire Me!</button>
+        </div>
+     </div>
+     <!-- Footer Start -->
+     <footer>
+        <div class="sm:h-40 max-sm:h-28 bg-zinc-900 flex items-center px-6 sm:px-8 md:px-12 lg:px-28 text-white place-content-between">
+            <h1 class="text-xs sm:text-sm md:text-base lg:text-lg">Copyright © 2025 <a href="#" class="text-rose-500 underline hover:no-underline">Toma</a>. All Rights Reserved.</h1>
+            <h1 class="text-xs sm:text-sm md:text-base lg:text-lg">Designed by <a href="https://www.facebook.com/akib.anjum.5" class="text-rose-500 underline hover:no-underline" target="_blank">Nusrat Jahan Toma</a></h1>
+        </div>
+     </footer>
+     <!-- Footer End -->
+     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+        AOS.init();
+     </script>
+</body>
+<script src="script.js"></script>
+</html>
